@@ -1,0 +1,31 @@
+{
+  "name": "genpark-automated-email-marketing-agent-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Goal-driven email sequence generator, A/B testing, and audience segmentation agent.",
+  "author": "genpark",
+  "category": "marketing",
+  "tags": [
+    "email-marketing",
+    "drip-campaign",
+    "ab-testing",
+    "sales-sequence"
+  ],
+  "inputs": {
+    "campaign_goal": {
+      "type": "string"
+    },
+    "audience_segment": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "email_sequence": {
+      "type": "array"
+    },
+    "predicted_open_rate": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
